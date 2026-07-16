@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "lockworlds",
+  "version": "${version}",
+  "name": "Lock Worlds",
+  "description": "Protect important singleplayer worlds and multiplayer servers with a simple lock.",
+  "authors": [
+    "Bebu"
+  ],
+  "license": "MIT",
+  "icon": "assets/lockworlds/icon.png",
+  "contact": {
+    "sources": "https://github.com/beburudra/lockworlds"
+  },
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.example.lockworlds.LockWorldsClient"
+    ]
+  },
+
+  "mixins": [
+    "lockworlds.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": ">=26.1 <=26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

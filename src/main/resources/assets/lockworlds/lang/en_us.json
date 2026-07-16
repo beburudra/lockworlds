@@ -1,0 +1,6 @@
+{
+  "lockworlds.tooltip.lock":   "Lock World",
+  "lockworlds.tooltip.unlock": "Unlock World",
+  "lockworlds.tooltip.lock_server": "Lock Server",
+  "lockworlds.tooltip.unlock_server": "Unlock Server"
+}

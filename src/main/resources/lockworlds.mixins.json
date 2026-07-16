@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "package": "net.example.lockworlds.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "WorldSelectionListEntryMixin",
+    "WorldSelectionListMixin",
+    "SelectWorldScreenMixin",
+    "JoinMultiplayerScreenAccessor",
+    "JoinMultiplayerScreenMixin",
+    "ServerSelectionListAccessor",
+    "ServerSelectionListEntryMixin",
+    "ServerSelectionListMixin",
+    "LockButtonListClickMixin",
+    "WorldSelectionListInvoker"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}
