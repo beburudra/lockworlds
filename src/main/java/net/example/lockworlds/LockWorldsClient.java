@@ -17,7 +17,7 @@ public class LockWorldsClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        LOGGER.info("[LockWorlds] Initializing Lock Worlds mod (MC 26.2).");
+        LOGGER.info("[LockWorlds] Initializing Lock Worlds mod (MC 26.3).");
         LockConfig.get();
         LOGGER.info("[LockWorlds] Config loaded. Ready.");
     }

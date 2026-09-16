@@ -10,7 +10,7 @@ import net.minecraft.client.gui.screens.worldselection.WorldSelectionList;
 import net.minecraft.client.input.MouseButtonEvent;
 import net.minecraft.client.multiplayer.ServerData;
 import net.minecraft.world.level.storage.LevelSummary;
-import org.lwjgl.glfw.GLFW;
+import com.mojang.blaze3d.platform.InputConstants;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -27,7 +27,7 @@ public abstract class LockButtonListClickMixin {
 
     @Inject(method = "mouseClicked", at = @At("HEAD"), cancellable = true)
     private void lockworlds$clickLockButton(MouseButtonEvent click, boolean doubleClick, CallbackInfoReturnable<Boolean> cir) {
-        if (click.buttonInfo().button() != GLFW.GLFW_MOUSE_BUTTON_1) return;
+        if (click.buttonInfo().button() != InputConstants.MOUSE_BUTTON_LEFT) return;
 
         Object self = this;
         if (self instanceof WorldSelectionList worldList && lockworlds$clickWorldLock(worldList, click.x(), click.y())) {

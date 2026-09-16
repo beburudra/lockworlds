@@ -11,7 +11,7 @@ import net.minecraft.client.multiplayer.ServerData;
 import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
-import org.lwjgl.glfw.GLFW;
+import com.mojang.blaze3d.platform.InputConstants;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
@@ -71,7 +71,7 @@ public abstract class ServerSelectionListEntryMixin {
     @Inject(method = "mouseClicked", at = @At("HEAD"), cancellable = true, require = 0)
     private void lockworlds$onMouseClicked(MouseButtonEvent click, boolean doubleClick, CallbackInfoReturnable<Boolean> cir) {
         try {
-            if (click.buttonInfo().button() != GLFW.GLFW_MOUSE_BUTTON_1) return;
+            if (click.buttonInfo().button() != InputConstants.MOUSE_BUTTON_LEFT) return;
 
             String key = lockworlds$serverKey();
             if (key == null) return;
