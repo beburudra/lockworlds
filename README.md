@@ -14,7 +14,7 @@ Perfect for survival worlds, long-term builds, adventure maps, and worlds you ne
 
 ## Requirements
 
-* Minecraft **26.1.x – 26.2**
+* Minecraft **26.3**
 * **Fabric**
 
 ## Building
