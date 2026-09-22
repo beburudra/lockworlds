@@ -7,6 +7,9 @@
   "license": "MIT",
   "authors": ["Bebu"],
   "icon": "assets/lockworlds/icon.png",
+"contact": {
+    "sources": "https://github.com/beburudra/lockworlds"
+  },
   "environment": "client",
   "entrypoints": {
     "client": [
@@ -22,6 +25,6 @@
     "fabricloader": ">=0.19.5",
     "minecraft": "26.3",
     "java": ">=25",
-    "fabric-api": "0.160.6+26.3"
+    "fabric-api": ">=0.161.0+26.3"
   }
 }
